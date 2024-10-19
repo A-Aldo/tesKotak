@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Memastikan container memenuhi seluruh viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menengahkan secara horizontal */
+    justify-content: center; /* Menengahkan secara vertikal */
+}
+
+.dasar {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Memberi jarak antara .dasar dan elemen di bawahnya */
+}
+
+.mataKiri, .mataKanan {
+    width: 46px;
+    height: 46px;
+    background-color: rgb(255, 0, 0);
+}
+
+.mataContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 150px; /* Sesuaikan dengan lebar container mata */
+}
+
+.mulut {
+    width: 150px;
+    height: 20px;
+    background-color: rgb(255, 0, 0);
+    margin-top: 50px;
+}
+
+.teksBTN {
+    font-size: 48px;
+    color: #333;
+    width: 180px;
+    background-color: aqua; /* Menambahkan warna latar belakang agar terlihat seperti tombol */
+    border: none; /* Menghilangkan border default tombol */
+    border-radius: 10px; /* Memberikan sudut yang melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    padding: 10px 20px; /* Menambahkan padding agar tombol lebih besar */
+    margin-top: 10px; /* Memberikan jarak kecil antara tombol dan teks */
+}
+
+.teks {
+    font-size: 38px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px; /* Memberikan jarak antara .dasar dan teks */
+}

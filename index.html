@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dasar">
+            <div class="mataContainer">
+                <div class="mataKiri"></div>
+                <div class="mataKanan"></div>
+            </div>
+            <div class="mulut"></div>
+        </div>
+        <button class="teksBTN" id="pencetBtn">click</button> <!-- Mengubah dari div ke button -->
+        <div class="teks"></div>
+    </div>
+
+    <script>
+        // Ambil elemen tombol dan elemen teks
+        const pencetBtn = document.getElementById("pencetBtn"); // Memperbaiki ID di sini
+        const teksDiv = document.querySelector(".teks");
+
+        // Tambahkan event listener untuk mendengarkan klik pada tombol
+        pencetBtn.addEventListener("click", function () {
+            // Ubah teks di bawah tombol
+            teksDiv.textContent = "Aku suka kamu, pacaran yuk"; // Ubah teks saat tombol ditekan
+        });
+    </script>
+</body>
+</html>
